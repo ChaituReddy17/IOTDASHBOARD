@@ -1,0 +1,18 @@
+{
+  "rooms": {
+    "Room1": {
+      "devices": {
+        "Light1": { "state": 0, "pin": 16 },
+        "Fan1":   { "state": 0, "pin": 5 },
+        "AC1":    { "state": 0, "pin": 4 },
+        "Projector": { "state": 0, "pin": 0 }
+      }
+    },
+    "Room2": {
+      "devices": {
+        "Light1": { "state": 1, "pin": 2 },
+        "Fan1":   { "state": 0, "pin": 14 }
+      }
+    }
+  }
+}
