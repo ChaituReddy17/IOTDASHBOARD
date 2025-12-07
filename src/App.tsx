@@ -6,6 +6,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import Analytics from "./pages/Analytics";
+import SolarAnalytics from "./pages/SolarAnalytics";
+import GridAnalytics from "./pages/GridAnalytics";
+import BatteryAnalytics from "./pages/BatteryAnalytics";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -20,6 +23,9 @@ const App = () => (
           <Route path="/" element={<Login />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/analytics" element={<Analytics />} />
+          <Route path="/solar-analytics" element={<SolarAnalytics />} />
+          <Route path="/grid-analytics" element={<GridAnalytics />} />
+          <Route path="/battery-analytics" element={<BatteryAnalytics />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

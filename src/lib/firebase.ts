@@ -10,8 +10,8 @@ const firebaseConfig = {
   projectId: "college-automation-6b895",
   storageBucket: "college-automation-6b895.firebasestorage.app",
   messagingSenderId: "859647653063",
-  appId: "1:859647653063:web:b5b6f9b98364d625e4bae2",
-  measurementId: "G-XFBHVK2V0X"
+  appId: "1:859647653063:web:198cc70ff4eab763e4bae2",
+  measurementId: "G-RHKYYD18FR"
 };
 
 // Initialize Firebase
