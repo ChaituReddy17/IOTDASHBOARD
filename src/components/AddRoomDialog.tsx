@@ -82,7 +82,7 @@ const AddRoomDialog = ({ open, onOpenChange }: AddRoomDialogProps) => {
         <DialogHeader>
           <DialogTitle className="text-2xl">Add New Room</DialogTitle>
           <DialogDescription>
-            Create a new room to manage devices
+            Create a new room with any custom name
           </DialogDescription>
         </DialogHeader>
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -90,16 +90,19 @@ const AddRoomDialog = ({ open, onOpenChange }: AddRoomDialogProps) => {
             <Label htmlFor="room-name">Room Name</Label>
             <Input
               id="room-name"
-              placeholder="e.g., Classroom 13"
+              placeholder="e.g., Main Office, Conference Hall, Server Room..."
               value={roomName}
               onChange={(e) => setRoomName(e.target.value)}
               required
               className="bg-muted/50 border-border"
             />
+            <p className="text-xs text-muted-foreground">
+              You can name it anything - Classroom, Lab, Office, Auditorium, etc.
+            </p>
           </div>
           
           <div className="space-y-2">
-            <Label htmlFor="room-type">Room Type</Label>
+            <Label htmlFor="room-type">Room Category (for organization)</Label>
             <Select value={roomType} onValueChange={(value) => setRoomType(value as RoomType)}>
               <SelectTrigger className="bg-muted/50 border-border">
                 <SelectValue />
@@ -107,6 +110,9 @@ const AddRoomDialog = ({ open, onOpenChange }: AddRoomDialogProps) => {
               <SelectContent>
                 <SelectItem value="classroom">Classroom</SelectItem>
                 <SelectItem value="lab">Lab</SelectItem>
+                <SelectItem value="office">Office</SelectItem>
+                <SelectItem value="auditorium">Auditorium</SelectItem>
+                <SelectItem value="custom">Custom / Other</SelectItem>
               </SelectContent>
             </Select>
           </div>
