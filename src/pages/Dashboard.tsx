@@ -283,7 +283,7 @@ const Dashboard = () => {
               <CardTitle className="text-sm font-medium text-muted-foreground flex items-center justify-between">
                 <span className="flex items-center gap-2" onClick={() => navigate('/grid-analytics')}>
                   <Plug className="w-5 h-5 text-blue-500" />
-                  Grid Power
+                  Grid Voltage
                 </span>
                 <div className="flex items-center gap-2">
                   <span className="text-blue-500 text-lg font-bold">{powerSources.grid.percentage}%</span>
@@ -313,7 +313,7 @@ const Dashboard = () => {
               <CardTitle className="text-sm font-medium text-muted-foreground flex items-center justify-between">
                 <span className="flex items-center gap-2" onClick={() => navigate('/battery-analytics')}>
                   <Battery className="w-5 h-5 text-green-500" />
-                  Battery Power
+                  Battery Voltage
                 </span>
                 <div className="flex items-center gap-2">
                   <span className={`text-lg font-bold ${getBatteryColor()}`}>{powerSources.battery.percentage}%</span>
@@ -417,3 +417,4 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
+
